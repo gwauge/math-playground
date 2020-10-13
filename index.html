@@ -6,14 +6,77 @@
     <title>Math Playground</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 
-    <script src="/src/js/lib.js"></script>
+    <script src="src/js/lib.js"></script>
 </head>
 <body>
     
+    <div class="container">
 
-    <script src="/src/js/main.js"></script>
+        <!-- base converter -->
+        <div class="row">
+            <div class="col-12">
+                <form onsubmit="return false;">
+                
+                    <fieldset>
+                        <legend>Base selection</legend>
+                        <div class="d-flex align-items-end">
+
+                            <div class="flex-grow-1 mx-1">
+                                <label for="source-base">Source base</label>
+                                <select id="source-base" class="form-select" aria-label="Source base selection">
+                                    <option value="2" selected>Binary (2)</option>
+                                    <option value="3">Ternary (3)</option>
+                                    <option value="4">Base 4</option>
+                                    <option value="5">Base 5</option>
+                                    <option value="6">Base 6</option>
+                                    <option value="7">Base 7</option>
+                                    <option value="8">Octal (8)</option>
+                                    <option value="9">Base 9</option>
+                                    <option value="10">Decimal (10)</option>
+                                    <option value="11">Base 11</option>
+                                    <option value="12">	Duodecimal (12)</option>
+                                    <option value="13">Base 13</option>
+                                    <option value="14">Base 14</option>
+                                    <option value="15">Base 15</option>
+                                    <option value="16">Hexadecimal (16)</option>
+                                </select>
+                            </div>
+
+                            <button id="switch-base" class="btn btn-primary px-3 mx-3 h-50" style="calc(1.5em + .75rem + 2px)">&#8652;</button>
+
+                            <div class="flex-grow-1 mx-1">
+                                <label for="target-base">Target base</label>
+                                <select id="target-base" class="form-select" aria-label="Target base selection">
+                                    <option value="2" selected>Binary (2)</option>
+                                    <option value="3">Ternary (3)</option>
+                                    <option value="4">Base 4</option>
+                                    <option value="5">Base 5</option>
+                                    <option value="6">Base 6</option>
+                                    <option value="7">Base 7</option>
+                                    <option value="8">Octal (8)</option>
+                                    <option value="9">Base 9</option>
+                                    <option value="10">Decimal (10)</option>
+                                    <option value="11">Base 11</option>
+                                    <option value="12">	Duodecimal (12)</option>
+                                    <option value="13">Base 13</option>
+                                    <option value="14">Base 14</option>
+                                    <option value="15">Base 15</option>
+                                    <option value="16">Hexadecimal (16)</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="src/js/main.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
 </body>
 </html>

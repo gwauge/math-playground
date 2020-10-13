@@ -36,3 +36,4 @@ function kgV(a, b) {
 
     return Math.trunc((Math.abs(a) * Math.abs(b)) / ggT(a, b))
 }
+
